@@ -1,0 +1,147 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.product-img{
+    display: grid;
+    grid-template-columns: repeat(1,auto-fill(1160px,1fr));
+}
+h1{
+    padding-top: 110px;
+    margin:20px;
+    text-align: center;
+}
+hr{
+    
+    max-width: 200px;
+    border:1px solid #caa529;
+}
+#name-fashion{
+    color:#f84258;
+}
+.trends-header, .main-head-of-color-gold{
+    color:#caa529;
+}
+.trends-categories, .for-her, .for-him{
+    display:grid;
+    padding-left:50px;
+}
+.trends-categories{
+    grid-template-columns: repeat(3,1fr);
+}
+.for-her{
+    grid-template-columns: repeat(2,1fr);
+}
+.for-him{
+    grid-template-columns: repeat(5,1fr);
+}
+@media screen and (max-width:984px){
+    .trends-categories, .for-her, .for-him{
+        padding-right:20px;
+        padding-left:20px;
+    }
+}
+
+.gallery .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+    gap: 2rem;
+}
+
+.gallery .box-container .box {
+    height: 25rem;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.gallery .box-container .box:hover .content {
+    display: flex;
+}
+
+.gallery .box-container .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.gallery .box-container .box .content {
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+    border: 0.2rem solid #222;
+    display: none;
+}
+
+.gallery .box-container .box .content h3 {
+    font-size: 2rem;
+    color: #222;
+    animation: fadeIn .2s linear backwards;
+}
+
+.gallery .box-container .box .content p {
+    font-size: 1.4rem;
+    color: #222;
+    padding: 1rem 0;
+    line-height: 2;
+    animation: fadeIn .2s linear backwards .4s;
+}
+
+.gallery .box-container .box .content .btn {
+    animation: fadeIn .2s linear backwards .6s;
+}
+
+.message {
+    background: url(img/pexels-laura-garcia-4006699\ \(1\).jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+    padding: 3rem 2rem;
+    margin: 55px 0px;
+}
+
+.message form {
+    /* margin: 2rem auto; */
+    margin-left: 100px;
+    background: #fff;
+    text-align: center;
+    max-width: 40rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    opacity: 0.3px;
+
+}
+
+.message form h3 {
+    font-size: 3rem;
+    color: #222;
+}
+
+.message form .box {
+    width: 100%;
+    padding: 1.5rem 0;
+    margin: .7rem 0;
+    font-size: 1.6rem;
+    color: #666;
+    text-transform: none;
+    border-radius: 0.2rem solid #222;
+}
+
+.message form .box:focus {
+    border-color: #F08080;
+}
+
+.message form textarea {
+    height: 15rem;
+    resize: none
+}
